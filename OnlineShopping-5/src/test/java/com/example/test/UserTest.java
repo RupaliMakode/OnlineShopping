@@ -20,10 +20,10 @@ public class UserTest {
 		User user = new User();
 
 		user.setName("Ritika_Neova");
-		user.setEmail("Rishii@neova.com");
-		user.setPassword("Rishii123");
-		user.setMobileNumber(9405405443l);
-		user.setAddress("Warje, Pune, 411028");
+		user.setEmail("ritika@neova.com");
+		user.setPassword("Riti123");
+		user.setMobileNumber(9561140178l);
+		user.setAddress("katraj, Pune");
 
 		userRepo.insertUser(user);
 	}
@@ -48,7 +48,7 @@ public class UserTest {
 	void deleteUserTest() {
 		User user = new User();
 		user.getUserId();
-		userRepo.deleteUser(9);
+		userRepo.deleteUser(4);
 	}
 
 	@Test

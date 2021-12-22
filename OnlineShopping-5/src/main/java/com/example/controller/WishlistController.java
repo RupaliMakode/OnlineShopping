@@ -3,6 +3,7 @@ package com.example.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -45,7 +46,7 @@ public class WishlistController {
 		wishilistRepo.updateWishlist(wID);
 	}
 
-	@PutMapping("/delete/{uID}")
+	@DeleteMapping("/delete/{uID}")
 	public void deleteWishlist(@PathVariable("uID") int x) {
 		wishilistRepo.deleteWishlist(x);
 	}

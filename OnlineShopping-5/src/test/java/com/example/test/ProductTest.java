@@ -29,10 +29,10 @@ public class ProductTest {
 	void insertProductTest() {
 		Product product = new Product();
 
-		product.setPrice(1500);
-		product.setImage("img-2");
-		product.setDescription("Office");
-		product.setBrand("Bata");
+		product.setPrice(2000);
+		product.setImage("img-1");
+		product.setDescription("Sports");
+		product.setBrand("Puma");
 		product.setStockRemaining(20);
 
 		productRepo.insertProduct(product);
@@ -41,7 +41,7 @@ public class ProductTest {
 	@Test
 	void newInsertProductWithUserAndAdminTest() {
 
-		Admin adminObj = adminRepo.selectAdmin(1);
+		Admin adminObj = adminRepo.selectAdmin(2);
 
 		User userObj = userRepo.selectUser(7);
 
@@ -62,7 +62,7 @@ public class ProductTest {
 	@Test
 	void selectProductTest() {
 
-		Product product = productRepo.selectProduct(31);
+		Product product = productRepo.selectProduct(50);
 
 		System.out.println("------------------------------------");
 
@@ -72,9 +72,6 @@ public class ProductTest {
 		System.out.println("Product desc       :" + product.getDescription());
 		System.out.println("Product brand      :" + product.getBrand());
 		System.out.println("Product stock_rem. :" + product.getStockRemaining());
-//		System.out.println("Product adminId    :" + product.getProductAdminId());
-//		System.out.println("Product userId     :" + product.getProductUserId());
-
 		System.out.println("------------------------------------");
 
 	}
@@ -92,8 +89,7 @@ public class ProductTest {
 			System.out.println("Product desc       :" + product.getDescription());
 			System.out.println("Product brand      :" + product.getBrand());
 			System.out.println("Product stock_rem. :" + product.getStockRemaining());
-//			System.out.println("Product adminId    :" + product.getProductAdminId());
-//			System.out.println("Product userId     :" + product.getProductUserId());
+//			
 			System.out.println("------------------------------------");
 
 		}
@@ -103,7 +99,7 @@ public class ProductTest {
 	void deleteProductTest() {
 		Product product = new Product();
 
-		productRepo.deleteProduct(11);
+		productRepo.deleteProduct(10);
 
 	}
 

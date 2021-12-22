@@ -38,7 +38,7 @@ public class CartTest {
 		cart.setQuantity(50);
 		cart.setTotal_Cart_Price(28000);
 
-		User userObj = userRepo.selectUser(7);
+		User userObj = userRepo.selectUser(4);
 
 		cart.setCartUserID(userObj);
 
@@ -49,13 +49,13 @@ public class CartTest {
 	@Test
 	void selectCartTest() {
 		Cart cart;
-		cart = cartRepo.selectCart(23);
+		cart = cartRepo.selectCart(5);
 		System.out.println("------------------------------------");
 
 		System.out.println("Cart ID         :" + cart.getCartId());
 		System.out.println("Cart Quantity   :" + cart.getQuantity());
 		System.out.println("Cart TotalPrice :" + cart.getTotal_Cart_Price());
-//		System.out.println("User ID         :" + cart.getCartUserID());
+
 		
 		System.out.println("------------------------------------");
 
@@ -66,7 +66,7 @@ public class CartTest {
 		
 		Cart cart1 = new Cart();
 	
-		cartRepo.deleteCart(24);
+		cartRepo.deleteCart(5);
 	}
 
 	@Test
@@ -89,7 +89,7 @@ public class CartTest {
 			System.out.println("Cart ID         :" + cart.getCartId());
 			System.out.println("Cart Quantity   :" + cart.getQuantity());
 			System.out.println("Cart TotalPrice :" + cart.getTotal_Cart_Price());
-//			System.out.println("User ID         :" + cart.getCartUserID());
+
 			
 			System.out.println("------------------------------------");
 

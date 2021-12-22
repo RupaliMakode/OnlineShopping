@@ -66,8 +66,7 @@ public class WishlistTest {
 		System.out.println("------------------------------------");
 
 		System.out.println("Wishlist ID :" + wishlist.getWishlistId());
-//		System.out.println("Admin Id    :" + wishlist.getWishlistUserID());
-//		System.out.println("Product Id  :" + wishlist.getWishlistProductID());
+
 
 		System.out.println("------------------------------------");
 
@@ -107,8 +106,7 @@ public class WishlistTest {
 		for (Wishlist wishlist : wishlistList) {
 			
 			System.out.println("Wishlist ID :" + wishlist.getWishlistId());
-//			System.out.println("Admin Id    :" + wishlist.getWishlistUserID());
-//			System.out.println("Product Id  :" + wishlist.getWishlistProductID());
+
 
 			System.out.println("------------------------------------");
 

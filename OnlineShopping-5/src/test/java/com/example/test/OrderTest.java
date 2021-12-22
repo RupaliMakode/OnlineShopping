@@ -26,9 +26,9 @@ public class OrderTest {
 	void insertOrderTest() {
 		Order order = new Order();
 
-		order.setLocalDate(LocalDate.of(1997, 06, 02));
+		order.setLocalDate(LocalDate.of(1997, 05, 20));
 		order.setQuantity(20);
-		order.setTotal_Order_Price(18000);
+		order.setTotal_Order_Price(1800);
 
 		orderRepo.insertOrder(order);
 	}
@@ -40,7 +40,7 @@ public class OrderTest {
 
 		Order order1 = new Order();
 
-		order1.setLocalDate(LocalDate.of(1997, 06, 02));
+		order1.setLocalDate(LocalDate.of(1997, 05, 20));
 		order1.setQuantity(75);
 		order1.setTotal_Order_Price(550000);
 		order1.setOrderUserID(userObj);
@@ -81,8 +81,7 @@ public class OrderTest {
 		System.out.println("Order Date        :" + order.getLocalDate());
 		System.out.println("Order Quantity    :" + order.getQuantity());
 		System.out.println("Order Total_Price :" + order.getTotal_Order_Price());
-//		System.out.println("Order UserId      :" + order.getOrderUserID());
-
+	
 		System.out.println("------------------------------------");
 	}
 
@@ -97,7 +96,6 @@ public class OrderTest {
 			System.out.println("Order Date        :" + order.getLocalDate());
 			System.out.println("Order Quantity    :" + order.getQuantity());
 			System.out.println("Order Total_Price :" + order.getTotal_Order_Price());
-//			System.out.println("Order UserId      :" + order.getOrderUserID());
 
 			System.out.println("------------------------------------");
 

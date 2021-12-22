@@ -19,15 +19,15 @@ public class AdminTest {
 	void insertAdminTest() {
 		Admin admin = new Admin();
 
-		admin.setName("A-Rahul");
-		admin.setPassword("rahul@123");
+		admin.setName("Rishii");
+		admin.setPassword("rishii@123");
 
 		adminRepo.insertAdmin(admin);
 	}
 
 	@Test
 	void selectAdminTest() {
-		Admin admin = adminRepo.selectAdmin(29);;
+		Admin admin = adminRepo.selectAdmin(1);;
 		
 		System.out.println("------------------------------------");
 
@@ -51,9 +51,9 @@ public class AdminTest {
 	void updateAdminTest() {
 		Admin admin = new Admin();
 
-		admin.setAdminId(1);
-		admin.setName("A-Rishi");
-		admin.setPassword("rishikesh123");
+		admin.setAdminId(2);
+		admin.setName("Rupali");
+		admin.setPassword("rupali123");
 
 		adminRepo.updateAdmin(admin);
 	}
